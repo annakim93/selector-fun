@@ -2,60 +2,107 @@
 
 
 /* Give the header element a background color */
-
+header {
+   background-color: aquamarine;
+}
 
 /* Center everything in the header and footer */
-
+header, footer {
+   text-align: center;
+}
 
 /* All text to Helvetica */
-
+* {
+   font-family: helvetica;
+}
 
 /* All links default color is gray*/
-
+a {
+   color: gray
+}
 
 /* All links on hover color red*/
+a:hover {
+   color: red
+}
 
 
 /* All Links visted color black*/
+a:visited {
+   color: black
+}
 
 
 /* Footer disclaimer text to be .5 em*/
+#disclaimer {
+   font-size: .5em;
+}
 
 
 /* Remove bullet points from header navigation links */
-
+header ul {
+   list-style-type: none;
+}
 
 /* All Post's Comment Links Italicized, Orange and Remove the Underline */
-
+a[href="#comments"] {
+   text-decoration: none;
+   font-style: italic;
+   color: orange;
+}
 
 /* All Post's Comment Links Show Underline on Hover */
-
+a[href="#comments"]:hover {
+   text-decoration: underline;
+}
 
 /* All Post's Author's Links Bold and Blue, with no Underline */
-
+h3 a {
+   text-decoration: none;
+   color: blue;
+   font-weight: bold;
+}
 
 /* Article Paragraph Text should have line height of 200% */
-
+article p {
+   line-height: 200%;
+}
 
 /* The First Letter of each Article be 2em */
-
+article::first-letter {
+   font-size: 2em;
+}
 
 /* The First Image in every Article should have Rounded Corners*/
-
+article img:first-child {
+   border-radius: 5%;
+}
 
 /* The First Top Cat Section (check the bottom of the HTML file) should have a Golden Background */
-
+#top-cats section:nth-child(2) {
+   background-color: gold;
+}
 
 /* The 2nd Top Cat Section Should have a Silver/gray Background */
+#top-cats section:nth-child(3) {
+   background-color: silver;
+}
 
 /* The 3rd-Most Top Cat Should have a Bronze/brown Background
    Note: the HTML for this one is a little odd! This is intentional! */
+aside+section {
+   background-color: brown;
+}
 
 /* Every other Article's Post-Content Background Color to a Light Grey */
-
+article p {
+   background-color: lightgray;
+}
 
 /* All Top Kitten's Profile Photos Rounded */
-
+[alt="profile photo"] {
+   border-radius: 5%;
+}
 
 /*** BONUS ***/
 
@@ -63,6 +110,11 @@
 
 
 /* Top-most Top Cat has a trophy emoji before name */
-
+/* .em-trophy {
+   display: inline-block;
+} */
 
 /* Use Google Fonts to change h1 & h2 fonts to Roboto Slab */
+h1, h2 {
+   font-family: 'Roboto Slab', serif;
+}
