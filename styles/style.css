@@ -79,12 +79,12 @@ article img:first-child {
 }
 
 /* The First Top Cat Section (check the bottom of the HTML file) should have a Golden Background */
-#top-cats section:nth-child(2) {
+section:nth-child(2) {
    background-color: gold;
 }
 
 /* The 2nd Top Cat Section Should have a Silver/gray Background */
-#top-cats section:nth-child(3) {
+section:nth-child(3) {
    background-color: silver;
 }
 
@@ -118,3 +118,15 @@ article p {
 h1, h2 {
    font-family: 'Roboto Slab', serif;
 }
+
+/* extra stuff i'm adding b/c this is ugly */
+/* ul {
+   list-style-type: none;
+}
+
+main { */
+   /* text-align: center; */
+   /* display: grid;
+   grid-template-columns: repeat(auto-fit, 1fr);
+   grid-gap: 500px, 5px;
+} */
